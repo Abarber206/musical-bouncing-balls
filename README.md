@@ -13,7 +13,7 @@ An interactive musical animation where bouncing balls create harmonious sounds. 
 
 ## Play Online
 
-Visit [Musical Bouncing Balls](https://yourusername.github.io/musical-bouncing-balls) to play in your browser!
+Visit [Musical Bouncing Balls](https://Abarber206.github.io/musical-bouncing-balls) to play in your browser!
 
 ## How to Play
 
@@ -38,7 +38,7 @@ Visit [Musical Bouncing Balls](https://yourusername.github.io/musical-bouncing-b
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/musical-bouncing-balls.git
+git clone https://github.com/Abarber206/musical-bouncing-balls.git
 ```
 
 2. Open index.html in your browser
