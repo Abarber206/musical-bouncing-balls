@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Bouncing Balls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls-panel">
+            <div class="main-controls">
+                <button id="startButton">Start Animation</button>
+                <button id="resetButton">Reset</button>
+            </div>
+            <div class="sound-controls">
+                <div class="control-group">
+                    <label for="themeSelect">Theme:</label>
+                    <select id="themeSelect">
+                        <option value="classic">Classic Dark</option>
+                        <option value="starfield">Starfield</option>
+                        <option value="matrix">Matrix Rain</option>
+                        <option value="bubbles">Floating Bubbles</option>
+                        <option value="gradient">Color Waves</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="instrumentSelect">Instrument:</label>
+                    <select id="instrumentSelect">
+                        <optgroup label="Synth Waves">
+                            <option value="sine">Sine Wave</option>
+                            <option value="triangle">Triangle Wave</option>
+                            <option value="square">Square Wave</option>
+                            <option value="sawtooth">Sawtooth Wave</option>
+                        </optgroup>
+                        <optgroup label="Piano & Keys">
+                            <option value="grand-piano">Grand Piano</option>
+                            <option value="electric-piano">Electric Piano</option>
+                            <option value="music-box">Music Box</option>
+                            <option value="vibraphone">Vibraphone</option>
+                        </optgroup>
+                        <optgroup label="Strings">
+                            <option value="violin">Violin</option>
+                            <option value="cello">Cello</option>
+                            <option value="harp">Harp</option>
+                            <option value="guitar">Acoustic Guitar</option>
+                        </optgroup>
+                        <optgroup label="Wind">
+                            <option value="flute">Flute</option>
+                            <option value="clarinet">Clarinet</option>
+                            <option value="pan-flute">Pan Flute</option>
+                        </optgroup>
+                        <optgroup label="Bell & Chimes">
+                            <option value="crystal">Crystal Bell</option>
+                            <option value="tubular-bells">Tubular Bells</option>
+                            <option value="wind-chimes">Wind Chimes</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="slider-control">
+                    <label for="volumeSlider">Volume:</label>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="30">
+                    <span class="slider-value">30%</span>
+                </div>
+                <div class="slider-control">
+                    <label for="sizeSlider">Circle Size:</label>
+                    <input type="range" id="sizeSlider" min="20" max="95" value="80">
+                    <span class="slider-value">80%</span>
+                </div>
+                <div class="slider-control">
+                    <label for="ballSizeSlider">Ball Size:</label>
+                    <input type="range" id="ballSizeSlider" min="5" max="20" value="10">
+                    <span class="slider-value">10px</span>
+                </div>
+                <div class="slider-control">
+                    <label for="multiplyChanceSlider">Multiply Rate:</label>
+                    <input type="range" id="multiplyChanceSlider" min="10" max="100" value="30">
+                    <span class="slider-value">30%</span>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div class="generation-info">Generation: <span id="generationCount">0</span></div>
+                <div class="balls-info">Balls: <span id="ballCount">1</span></div>
+            </div>
+        </div>
+        <canvas id="bouncingCanvas"></canvas>
+        <canvas id="backgroundCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
